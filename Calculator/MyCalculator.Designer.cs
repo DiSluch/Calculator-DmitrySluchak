@@ -230,7 +230,7 @@ namespace Calculator
             // 
             // equals
             // 
-            this.equals.BackColor = System.Drawing.Color.MediumBlue;
+            this.equals.BackColor = System.Drawing.Color.Red;
             this.equals.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.equals.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.equals.ForeColor = System.Drawing.Color.White;
@@ -326,7 +326,7 @@ namespace Calculator
             this.divide.UseVisualStyleBackColor = false;
             this.divide.Click += new System.EventHandler(this.plus_Click);
             // 
-            // Calculator
+            // MyCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -351,7 +351,7 @@ namespace Calculator
             this.Controls.Add(this.number6);
             this.Controls.Add(this.number7);
             this.Controls.Add(this.screen);
-            this.Name = "Calculator";
+            this.Name = "MyCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятор";
             this.ResumeLayout(false);

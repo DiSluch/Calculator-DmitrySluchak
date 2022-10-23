@@ -32,34 +32,13 @@ namespace Calculator
             screen.Clear();
         }
 
-        public double Arithmetic(double a, double b, char znak)
-        {
-            switch (znak)
-            {
-                case '+':
-                    c = a + b;
-                    break;
-                case '-':
-                    c = a - b;
-                    break;
-                case '*':
-                    c = a * b;
-                    break;
-                case '/':
-                    c = a / b;
-                    break;
-            }
-
-            return c;
-        }
+        
 
         private void equals_Click(object sender, EventArgs e)
         {
             b = Convert.ToDouble(screen.Text);
 
-            MyCalculator calc = new MyCalculator();
-
-            double c = calc.Arithmetic(a, b, znak);
+            c = АrithCalculator.Arithmetic(a, b, znak);
 
             screen.Text = c.ToString();
         }
